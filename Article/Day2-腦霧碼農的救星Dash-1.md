@@ -23,14 +23,14 @@
 
 ### 搜尋程式語言的 API
 這邊就先用Python 為範例說明，因為資料科學主要的語言，首先在Dash home 介面像這樣
-![[Images/D2-1.png]]
+![[../Images/D2-1.png]]
 
 1. 點選`Download Docsets`，搜尋 `Python` ，然後就下載自己用到的Docset
-![[Images/D2-2.png]]
+![[../Images/D2-2.png]]
 
 2. 下載Docsets 完後，設定 Search Profile，在上方點選`符號`，然後進入設定畫面
 
-![[Images/D2-3.png]]
+![[../Images/D2-3.png]]
 
 
 3. Search Profile設定畫面，依序設定如下
@@ -41,7 +41,7 @@
 	E. 新增Search Docsets (`Python3`, `NumPy`, `Matplotlib`, `SciPy` 這四項)
 
 
-![[Images/D2-4.png]]
+![[../Images/D2-4.png]]
 
 
 接下來講使用 Dash 的情境：
@@ -51,12 +51,12 @@
 情境一： 例如忘記Lambda Expressions 要怎麼使用？
 就是使用上面快捷鍵跟 `Keyword` 的部分換成 *lambda*，然後就會出現內容及範例說明
 
-![[Images/D2-5.png]]
+![[../Images/D2-5.png]]
 
 情境二： NumPy 要怎麼 `transpose`?
 就是使用上面快捷鍵跟 `Keyword` 的部分換成 *transpose*，然後就會出現各種型態的transpose，然後就依據自己的狀況去查詢使用
 
-![[Images/D2-6.png]]
+![[../Images/D2-6.png]]
 
 
 ==後面兩個功能明天再一起講==
