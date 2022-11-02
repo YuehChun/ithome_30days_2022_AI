@@ -7,7 +7,7 @@ This is a 30day challenge for write technical article.
 - [【Day4】Pytorch基本用法-1](【Day4】Pytorch基本用法-1)
 - [【Day5】Pytorch基本用法-2](【Day5】Pytorch基本用法-2)
 - [【Day6】Pytorch基本用法-3](【Day6】Pytorch基本用法-3)
-- [【Day7】Pytorch Feedforward Neural Network - 1](/%90Day7%E3%80%91Pytorch%20Feedforward%20Neural%20Network%20-1)
+- [【Day7】Pytorch Feedforward Neural Network-1](【Day7】Pytorch Feedforward Neural Network-1)
 - [【Day8】Pytorch Feedforward Neural Network -2](【Day8】Pytorch Feedforward Neural Network -2)
 - [【Day9】Pytorch Convolutional Neural Network](【Day9】Pytorch Convolutional Neural Network)
 - [【Day10】Pytorch Recurrent Neural Network](【Day10】Pytorch Recurrent Neural Network)
