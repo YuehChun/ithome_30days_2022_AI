@@ -47,7 +47,7 @@ plt.show()
 並在上方的 `Snippet Abbreviation` 打上自己喜歡的關鍵字，這邊用 `!test_2y_plot` 這段來示範使用(前面有一個驚嘆號！，不過我私底下都喜歡用一小點) 
 
 所以完成就像這樣
-![[Pasted image 20220908164114.png]]
+![[Images/D3-1.png]]
 *如果不使用要記得刪除*
 
 ##### 搜尋Keyword
@@ -57,18 +57,18 @@ plt.show()
 
 現在要講到重點了就是 `Snippet` 的使用方式，先打開 `Jupyter Notebook` 然後 **就先新增一個筆記本然後到可以打code的地方**。
 
-![[Pasted image 20220908164947.png]]
+![[Images/D3-2.png]]
 
 然後在Dash 打開的狀況下(背景執行或者怎樣都可以就是不能 `command` +`Q` 關掉)，直接輸入 剛剛我們設定的  `Snippet Abbreviation` 也就是範例 : `!test_2y_plot` 
 
 **PS:可以修改打錯，但是如果跳出或者切換地方就要重打，所以麻煩一次打對，也就是不要設太長**
 
 
-![[Pasted image 20220908165357.png]]
+![[Images/D3-3.png]]
 
 輸入完後就會直接跳出剛設定好的 `Snippet` 這就是最簡單的使用方式。然後執行就完成了。
 
-![[Pasted image 20220908165417.png]]
+![[Images/D3-4.png]]
 
 這個 `Snippet` 功能可以用在很多的地方，尤其是對於一些 Pytorch 或者 TensorFlow 的架構都可以先用這種方式整理一下存起來，以便未來要使用的時候，可以直接尻出來改就好了，相當的省時
 
@@ -78,13 +78,13 @@ plt.show()
 - `color1` 改成 `__color1__` 
 - `color2` 改成 `__color2__`  
 
-![[Pasted image 20220908171432.png]]
+![[Images/D3-5.png]]
 
 這邊改好之後，接下來在一樣在 `Jupyter notebook` 上試著打 `Snippet Abbreviation` 也就是範例 : `!test_2y_plot` 
 
 此時畫面就會出現這個就是叫你打文字，所以可以接著打 `"red"` 就會把`__color1__` 全都變成 `"red"` 然後 `Enter` 就可以接下來改 `__color2__`
 
-![[Pasted image 20220908172059.png]]
+![[Images/D3-6.png]]
 
 
 這變數後續應用就直接換成自己在處理的資料的片段程式碼然後再套上變數就可以不斷地到處去使用，感覺很強，說穿了也只是記 `keyword`

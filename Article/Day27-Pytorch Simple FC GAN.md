@@ -39,7 +39,7 @@ from torch.utils.tensorboard import SummaryWriter  # to print to tensorboard
 ```
 
 在開始拆解 Discrimonator 和 Generator 之前可以謹記這個架構模型
-![[D27-1.png]]
+![[Images/D27-1.png]]
 圖片來源：[generative-adversarial-networks](https://github.com/jonbruner/generative-adversarial-networks/blob/master/gan-notebook.ipynb)
 
 ### Discriminator
@@ -189,13 +189,13 @@ for epoch in range(num_epochs):
 
 `這是一開始訓練11次的狀況`
 
-![[D27-2.png]]
+![[Images/D27-2.png]]
 
 `訓練33次`
-![[D27-3.png]]
+![[Images/D27-3.png]]
 
 `這是訓練302次 其實輪廓就很明顯了`
-![[D27-4.png]]
+![[Images/D27-4.png]]
 
 
 ### 結論

@@ -56,7 +56,7 @@ drive.mount('/content/drive')
 ### Classification Dataset
 
 影像的`Classification`就是使用比較單純的Dataset，針對整個檔案做`Label`，一個影像圖片就是輸出一個分類的結果，原始圖如下
-![[D17-11.png]]
+![[Images/D17-11.png]]
 
 然後 `Augmentation` 就是，針對整張的影像做轉向調整角度及亮度等等的手法讓機器學習怎麼判斷類別
 
@@ -88,12 +88,12 @@ plot_examples(images_list)
 ```
 
 做出來的結果就如下方圖 (*左上角的為原本的圖*)
-![[D17-1.png]]
+![[Images/D17-1.png]]
 
 
 ### Object Detection Dataset
 YOLO 演算法就是一個很有名的應用，簡單來講就是在影像中偵測各種物件，就像是如左上角那張圖，紅匡會匡著一個物件，原始圖如下：
-![[D17-21.png]]
+![[Images/D17-21.png]]
 
 ```Python
 cv2_image = cv2.imread("/content/drive/MyDrive/Colab Notebooks/ithome/albumentations/cat.jpg")
@@ -136,20 +136,20 @@ plot_examples(images_list, saved_bboxes)
 
 而在Data Augmentation 的時候物體的位置可能移動或轉向，所以紅匡也透過計算跟著移動
 
-![[D17-2.png]]
+![[Images/D17-2.png]]
 
 ### Segmentation Dataset
 
 Segmentation  也是一個很類似物件偵測的方法，但是跟YOLO比較不一樣的地方就是 Segmantation 是pixel 的方法，而YOLO 是利用Box 的方法去匡列物件。
 另外Pixel的方式就是一張原圖之外，還要另外加個Mask的東西，這個方式怎麼訓練的，可能就要去查看看演算法了，這邊就不提了
 所以這邊就會需要幾張圖片，這張是原始的圖片
-![[elon.jpg]]
+![[Images/elon.jpg]]
 
 然後這張是加了mask的圖片，所以綠色的就是他的頭，紅色的就是他的衣服
-![[mask.jpg]]
+![[Images/mask.jpg]]
 
 另一個mask，就是一個深藍色裡面的紅色就是眼睛，黃色的就是嘴巴
-![[second_mask.jpg]]
+![[Images/second_mask.jpg]]
 
 這也是透過人工標記的方式去把物件標記起來的。然後我們這邊的 Image load 的部分就是直接使用 Image.open 起來
 
@@ -193,7 +193,7 @@ plot_examples(images_list)
 
 	因此記得在做這些任務的訓練資料如果只對原圖做 Data augmentation 是不夠的，mask 的影像也要一起處理
 
-![[D17-3.png]]
+![[Images/D17-3.png]]
 
 
 ### 後續

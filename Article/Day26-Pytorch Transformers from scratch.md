@@ -13,13 +13,13 @@ From Scratch 就是從頭開始的意思，所以這張主要是要講 Transform
 ### Transformer 架構
 
 首先這是一個 Transfomer 的架構看圖就大概知道，左邊的為 decoder 的架構，右邊的為encoder 的架構，重要的是有一個 Multi-Head Attention 這一塊等等會獨立出來說明，然後decoder 的  Multi-Head Attention 多一個 Masked 的步驟，所以會把 Masked 的需求寫進去 Attention Class 裡面，接下來就一點一點慢慢講
-![[D26-1.png]]
+![[Images/D26-1.png]]
 
 ### Multi-Head Attention 的部分
 
 因為 Decoder 跟 Encoder 都需要 Attention ，畢竟 Transformer 的霸氣標題就是 `『Attention is all you need』` 的關係，所以這一塊 Attention 是真的很重要
 首先這個是 Attention 的計算架構圖，中間有看到一個 Mask 的部分後面會講 ， 而 Mask 有分兩個一個是 encoder 層面的 padding Mask，decoder 的 Masked Multi-Head attention 
-![[D26-2.png]]
+![[Images/D26-2.png]]
 
 
 ```Python
@@ -92,15 +92,14 @@ class SelfAttention(nn.Module):
 說明： padding mask 就是因為batch input 的seqence length 不一致(有長有短)，所以需要使用 `<pad>` 填充到後面的跟，而這些 `<pad>` 不需要計算 attention 所以就用 Mask（這邊使用-inf），然後在 softmax 的時候會直接變成0所以就不會有 attention score 。
 
 說明：因為不能看到後面的答案，所以會是用 Masked ，以下面的圖來說，計算y1 的時候考慮的只有 x1 , 而計算 y2 的時候考慮的只有 x1 跟 x2 
-![[D26-3.png]]
+![[Images/D26-3.png]]
 
 
 ### Transformer Block
 接著要把 Attention 跟 Add & Norm 還有 Feed Forward 拼起來，所以接下來的要生出來的架構如下
 
 
-
-![[D26-4.png]]
+![[Images/D26-4.png]]
 
 
 ```Python
@@ -132,7 +131,7 @@ class TransformerBlock(nn.Module):
 ### Encoder Block
 
 Encoder Block 跟上面唯一的差別就是在於下方的 position encoding  還有 input embedding 這兩個區塊
-![[D26-5.png]]
+![[Images/D26-5.png]]
 ```Python
 
 class Encoder(nn.Module):
@@ -187,7 +186,7 @@ class Encoder(nn.Module):
 ### Decoder Block
 會用Decoder block 主要的原因是因為是要先處理 Decoder 的部分，而在最後的output 的部分可以依據解決的問題不同來做不同的輸出，不同的輸出會放在下一階段再講decoder ，這邊主要先來講 Decoder Block ，如下方圖片所示
 
-![[D26-6.png]]
+![[Images/D26-6.png]]
 
 ```Python
 
@@ -218,7 +217,7 @@ class DecoderBlock(nn.Module):
 另外一開始要預測第一個翻譯的 token 就是開始符號 `<bos>` 就叫做 begin of sentence ，也有人用 `<sos>` 都可以反正自己知道在做什麼就好ＸＤ
 
 而Encoder 的資訊要把 Query 跟 Key 要傳到 Decoder 這裡，而這個行為就是所謂的 `cross attention` 是encoder 跟 decoder 中間的橋樑，所以相當的重要
-![[D26-7.png]]
+![[Images/D26-7.png]]
 ```Python
 
 class Decoder(nn.Module):
@@ -361,7 +360,7 @@ if __name__ == "__main__":
 
 ### Multi-Head Attention 
 這邊補充一下 Multi-Head Attention 的機制，主要是訓練model 把注意力放置在不同的地方，藉由不同角度看整個句子來充分訓練出要如何來解讀這句子的資訊
-![[D26-8.png]]
+![[Images/D26-8.png]]
 
 
 ### 結論

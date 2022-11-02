@@ -32,7 +32,7 @@ transform=transforms.ToTensor(),
 
 然後我們使用的Dataset 圖片的資料只有10張，縮圖大概如下：
 
-![[D16-1.png]]
+![[Images/D16-1.png]]
 
 ###  Transforms 的方法
 
@@ -90,7 +90,7 @@ for _ in range(10):
 
 
 最後的結果
-![[D16-2.png]]
+![[Images/D16-2.png]]
 
 ### 結論
 

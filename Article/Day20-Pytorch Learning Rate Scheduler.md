@@ -12,7 +12,7 @@
 
 簡單來講就是加速訓練速度？但是如果一開始設定 Learning rate 就很低的話確實不會加速（但是Learning rate 太低就會造成訓練太久的現象），因此Scheduler 就是一開始設定比較大的 Learning rate，然後加速收斂，而且還不會 overshooting 的小工具。
 
-![[D20-1.png]]
+![[Images/D20-1.png]]
 Source: [Adam和學習率衰減(Learning rate decay)](https://www.cnblogs.com/wuliytTaotao/p/11101652.html)
 
 ### import 的部分

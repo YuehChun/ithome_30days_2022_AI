@@ -443,6 +443,9 @@ def train():
             loss = criterion(
                 outputs.reshape(-1, outputs.shape[2]), captions.reshape(-1)
             )
+          
+			# writer.add_scalar("Training loss", loss.item(), global_step=step)
+			step += 1
 
             optimizer.zero_grad()
             loss.backward(loss)

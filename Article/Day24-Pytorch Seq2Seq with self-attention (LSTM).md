@@ -114,7 +114,7 @@ class Encoder(nn.Module):
 如果不了解 decoder 的話，可以搭配這張截圖(來源[Youtube](https://www.youtube.com/watch?v=StOFwSRBwMo&ab_channel=MinsukHeo%ED%97%88%EB%AF%BC%EC%84%9D))的部分，可以協助理解decoder 到底在做什麼
 
 `context vector = attention weight做 bmm(attention, encoder_state)`
-![[D24-1.png]]
+![[Images/D24-1.png]]
 
 ```Python
 
