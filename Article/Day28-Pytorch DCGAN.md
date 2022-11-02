@@ -6,7 +6,7 @@
 
 ### 前言
 這次來講解釋DCGAN ，而DCGAN 跟上一章節架構上沒有太大的差異，而改變的地方就是這裡加入CNN的概念來對圖片處理，可以看下面這張圖
-![[Images/D28-1.png]]
+![image](../Images/D28-1.png)
 
 從一開始的 Z_dim 就慢慢透過反卷積的機制，還原成一張 RGB 大小為64x64 的圖片，然而這是Generator 的部分，Discriminator 的部分則是把一個圖片做卷積來判斷是不是一個真實的圖片。
 
@@ -260,10 +260,10 @@ for epoch in range(NUM_EPOCHS):
 其實只需要train 一下就有基本的圖形就出來了，但是要要求每張圖片都很精準的話，其實真的有難度，而DCGAN 的訓練速度確實比單存使用 Fully connected 的來講效果好很多，所以這章節除了說明GAN的基本架構之外，然後還有實作 DCGAN 利用CNN 中convolution 來做 Generator and Discriminator 的部分，不過最讓人需要花時間的地方還是在 loss function 跟每一層的input 與 output 都需要花時間去理解。
 
 一開始只有跑 3 steps的成果其實什麼都看不出來
-![[Images/D28-2.png]]
+![image](../Images/D28-2.png)
 
 訓練steps = 39 的結果其實有一點雛形了，成效算是不錯了。
-![[Images/D28-3.png]]
+![image](../Images/D28-3.png)
 
 
 但當然如果要求要很完美的話，就是要用時間去讓他慢慢訓練囉

@@ -18,7 +18,7 @@ ref : [Pytorch中 nn.Transformer的使用详解与Transformer的黑盒讲解](ht
 如果想要從頭幹起 Transformer 的話，就看下一篇的說明，這一篇就直接使用現成的模組來說明
 
 並參考這張圖
-![[Images/D25-1.png]]
+![image](../Images/D25-1.png)
 圖片中可以看到 `nn.Transformer` 沒蓋到的地方就是我們要訓練的地方分別有下方四個 embedding : 
 1. src_position_embedding 
 2. src_word_embedding

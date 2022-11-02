@@ -113,7 +113,7 @@ for batch_size in batch_sizes:
 
 ### 最後呈現結果
 大概如下圖可以看到我們在訓練Model階段所加的 `set_description` 跟 `set_postfix`  會改變所呈現的內容
-![[Images/D19-1.png]]
+![image](../Images/D19-1.png)
 
 ### 結語
 我這邊還有另一種 Progress bar 的工具，如果要長時間訓練model 的狀況建議加一下 Pregress bar，因為如果畫面沒有任何的output ，那是電腦卡住還是有在跑會讓人懷疑人生～～
